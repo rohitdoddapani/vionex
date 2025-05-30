@@ -61,6 +61,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        elvora: {
+          purple: "hsl(var(--elvora-purple))",
+          blue: "hsl(var(--elvora-blue))",
+          dark: "hsl(var(--elvora-dark))",
+        },
       },
       keyframes: {
         "accordion-down": {
