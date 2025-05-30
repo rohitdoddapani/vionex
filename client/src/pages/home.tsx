@@ -321,17 +321,17 @@ export default function Home() {
                   <p className="text-gray-600">Every solution is powered by artificial intelligence for maximum efficiency and innovation.</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Handshake className="text-white h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-semibold text-elvora-dark mb-2">Expert Team</h3>
+                  <h3 className="text-xl font-semibold text-slate-800 mb-2">Expert Team</h3>
                   <p className="text-gray-600">Seasoned professionals with deep expertise in AI, development, and digital strategy.</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <TrendingUp className="text-white h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-semibold text-elvora-dark mb-2">Future-Ready</h3>
+                  <h3 className="text-xl font-semibold text-slate-800 mb-2">Future-Ready</h3>
                   <p className="text-gray-600">Building solutions that evolve with technology and scale with your business growth.</p>
                 </div>
               </div>
@@ -344,8 +344,8 @@ export default function Home() {
       <section id="services" className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-elvora-dark mb-6">
-              Our <span className="bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent">Services</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
+              Our <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Services</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive digital solutions designed to accelerate your business growth through innovation and automation.
@@ -356,14 +356,14 @@ export default function Home() {
             {services.map((service, index) => (
               <Card key={index} className="bg-white/90 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl">
                 <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-xl flex items-center justify-center mb-6">
                     <service.icon className="text-white h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-semibold text-elvora-dark mb-4">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-slate-800 mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <button 
                     onClick={() => scrollToSection('contact')}
-                    className="text-elvora-purple font-semibold hover:text-elvora-blue transition-colors"
+                    className="text-indigo-600 font-semibold hover:text-blue-600 transition-colors"
                   >
                     Learn More <ArrowRight className="inline h-4 w-4 ml-1" />
                   </button>
@@ -378,8 +378,8 @@ export default function Home() {
       <section id="why-choose-us" className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-elvora-dark mb-6">
-              Why Choose <span className="bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent">Elvora</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
+              Why Choose <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Elvora</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We deliver exceptional results through our unique combination of AI expertise, design excellence, and customer-focused approach.
@@ -389,10 +389,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center group">
-                <div className="w-20 h-20 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="text-white h-10 w-10" />
                 </div>
-                <h3 className="text-xl font-semibold text-elvora-dark mb-4">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-800 mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
@@ -402,15 +402,15 @@ export default function Home() {
           <div className="mt-16 bg-gradient-to-r from-slate-50 to-blue-50 rounded-3xl p-8 lg:p-12">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent mb-2">100+</div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent mb-2">100+</div>
                 <p className="text-gray-600 font-medium">Projects Delivered</p>
               </div>
               <div>
-                <div className="text-4xl font-bold bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent mb-2">98%</div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent mb-2">98%</div>
                 <p className="text-gray-600 font-medium">Client Satisfaction</p>
               </div>
               <div>
-                <div className="text-4xl font-bold bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent mb-2">24/7</div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent mb-2">24/7</div>
                 <p className="text-gray-600 font-medium">Support Available</p>
               </div>
             </div>
@@ -419,7 +419,7 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact" className="py-16 lg:py-24 bg-gradient-to-br from-slate-900 to-elvora-dark">
+      <section id="contact" className="py-16 lg:py-24 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -432,7 +432,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <div className="flex items-center text-gray-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center mr-4">
                     <Mail className="text-white h-6 w-6" />
                   </div>
                   <div>
@@ -442,7 +442,7 @@ export default function Home() {
                 </div>
                 
                 <div className="flex items-center text-gray-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center mr-4">
                     <Phone className="text-white h-6 w-6" />
                   </div>
                   <div>
