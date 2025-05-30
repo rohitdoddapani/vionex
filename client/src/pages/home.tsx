@@ -165,31 +165,31 @@ export default function Home() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <button
                   onClick={() => scrollToSection('hero')}
-                  className="text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   About
                 </button>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('why-choose-us')}
-                  className="text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Why Us
                 </button>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Contact
                 </button>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-elvora-purple"
+                className="text-gray-700 hover:text-indigo-600"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -213,31 +213,31 @@ export default function Home() {
               <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
                 <button
                   onClick={() => scrollToSection('hero')}
-                  className="block px-3 py-2 text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="block px-3 py-2 text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   About
                 </button>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="block px-3 py-2 text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('why-choose-us')}
-                  className="block px-3 py-2 text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Why Us
                 </button>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="block px-3 py-2 text-gray-700 hover:text-elvora-purple transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors duration-300"
                 >
                   Contact
                 </button>
@@ -253,9 +253,9 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div className="lg:col-span-6">
               <div className="text-center lg:text-left">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-elvora-dark leading-tight">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
                   Your all-in-one{" "}
-                  <span className="bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
                     digital partner
                   </span>{" "}
                   for AI, automation, and growth
@@ -266,7 +266,7 @@ export default function Home() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <Button
                     onClick={() => scrollToSection('contact')}
-                    className="bg-gradient-to-r from-elvora-purple to-elvora-blue text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Get Started
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -274,7 +274,7 @@ export default function Home() {
                   <Button
                     onClick={() => scrollToSection('about')}
                     variant="outline"
-                    className="bg-white text-elvora-purple px-8 py-4 rounded-xl font-semibold border-2 border-elvora-purple hover:bg-elvora-purple hover:text-white transition-all duration-300"
+                    className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold border-2 border-indigo-600 hover:bg-indigo-600 hover:text-white transition-all duration-300"
                   >
                     Learn More
                   </Button>
@@ -290,11 +290,11 @@ export default function Home() {
                     alt="Modern digital workspace with AI technology" 
                     className="w-full h-full object-cover" 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-elvora-purple/20 to-elvora-blue/20"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-blue-600/20"></div>
                 </div>
                 
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-full opacity-80 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-elvora-blue rounded-full opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full opacity-80 animate-pulse"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-600 rounded-full opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
               </div>
             </div>
           </div>
@@ -305,8 +305,8 @@ export default function Home() {
       <section id="about" className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-elvora-dark mb-6">
-              About <span className="bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent">Elvora.tech</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
+              About <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Elvora.tech</span>
             </h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -314,10 +314,10 @@ export default function Home() {
               </p>
               <div className="grid md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Brain className="text-white h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-semibold text-elvora-dark mb-2">AI-First Approach</h3>
+                  <h3 className="text-xl font-semibold text-slate-800 mb-2">AI-First Approach</h3>
                   <p className="text-gray-600">Every solution is powered by artificial intelligence for maximum efficiency and innovation.</p>
                 </div>
                 <div className="text-center">
