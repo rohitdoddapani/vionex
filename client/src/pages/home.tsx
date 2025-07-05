@@ -156,7 +156,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
-                Elvora
+                Vionex
               </span>
             </div>
             
@@ -306,11 +306,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
-              About <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Elvora.tech</span>
+              About <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Vionex.tech</span>
             </h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                At Elvora, we're pioneering the future of digital transformation through intelligent AI solutions. Our expert team combines cutting-edge technology with creative design to deliver scalable, efficient, and innovative digital experiences.
+                At Vionex, we're pioneering the future of digital transformation through intelligent AI solutions. Our expert team combines cutting-edge technology with creative design to deliver scalable, efficient, and innovative digital experiences.
               </p>
               <div className="grid md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
@@ -379,7 +379,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
-              Why Choose <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Elvora</span>
+              Why Choose <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Vionex</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We deliver exceptional results through our unique combination of AI expertise, design excellence, and customer-focused approach.
@@ -427,7 +427,7 @@ export default function Home() {
                 Ready to Transform Your Business?
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Let's discuss how Elvora can accelerate your digital transformation with AI-powered solutions tailored to your unique needs.
+                Let's discuss how Vionex can accelerate your digital transformation with AI-powered solutions tailored to your unique needs.
               </p>
               
               <div className="space-y-6">
@@ -437,7 +437,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-semibold text-white">Email Us</p>
-                    <p>hello@elvora.tech</p>
+                    <p>hello@vionex.tech</p>
                   </div>
                 </div>
                 
@@ -452,7 +452,7 @@ export default function Home() {
                 </div>
                 
                 <div className="flex items-center text-gray-300">
-                  <div className="w-12 h-12 bg-gradient-to-r from-elvora-purple to-elvora-blue rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center mr-4">
                     <Clock className="text-white h-6 w-6" />
                   </div>
                   <div>
@@ -466,7 +466,7 @@ export default function Home() {
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="block text-sm font-semibold text-elvora-dark mb-2">
+                  <Label htmlFor="name" className="block text-sm font-semibold text-slate-800 mb-2">
                     Full Name *
                   </Label>
                   <Input
@@ -475,13 +475,13 @@ export default function Home() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-elvora-purple focus:ring-2 focus:ring-elvora-purple/20 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 outline-none transition-all duration-300"
                     placeholder="Enter your full name"
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="email" className="block text-sm font-semibold text-elvora-dark mb-2">
+                  <Label htmlFor="email" className="block text-sm font-semibold text-slate-800 mb-2">
                     Email Address *
                   </Label>
                   <Input
@@ -490,13 +490,13 @@ export default function Home() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-elvora-purple focus:ring-2 focus:ring-elvora-purple/20 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 outline-none transition-all duration-300"
                     placeholder="Enter your email address"
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="message" className="block text-sm font-semibold text-elvora-dark mb-2">
+                  <Label htmlFor="message" className="block text-sm font-semibold text-slate-800 mb-2">
                     Project Details *
                   </Label>
                   <Textarea
@@ -505,7 +505,7 @@ export default function Home() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-elvora-purple focus:ring-2 focus:ring-elvora-purple/20 outline-none transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 outline-none transition-all duration-300 resize-none"
                     placeholder="Tell us about your project and goals..."
                   />
                 </div>
@@ -513,7 +513,7 @@ export default function Home() {
                 <Button
                   type="submit"
                   disabled={contactMutation.isPending}
-                  className="w-full bg-gradient-to-r from-elvora-purple to-elvora-blue text-white py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   {contactMutation.isPending ? "Sending..." : "Send Message"}
                   {!contactMutation.isPending && <ArrowRight className="ml-2 h-4 w-4" />}
@@ -529,11 +529,11 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-elvora-dark py-12">
+      <footer className="bg-slate-800 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-6">
-              <span className="text-3xl font-bold bg-gradient-to-r from-elvora-purple to-elvora-blue bg-clip-text text-transparent">Elvora</span>
+              <span className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Vionex</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
               Transforming businesses through intelligent AI solutions, innovative design, and cutting-edge technology.
@@ -541,7 +541,7 @@ export default function Home() {
             
             <div className="border-t border-gray-700 pt-8">
               <p className="text-gray-500">
-                © 2024 Elvora.tech. All rights reserved. Built with AI-powered innovation.
+                © 2024 Vionex.tech. All rights reserved. Built with AI-powered innovation.
               </p>
             </div>
           </div>
