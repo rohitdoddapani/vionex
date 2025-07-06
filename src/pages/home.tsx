@@ -1,12 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 import { 
   Brain, 
   Laptop, 
@@ -39,27 +37,7 @@ export default function Home() {
     message: ""
   });
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for your message! We'll get back to you within 24 hours.",
-      });
-      setFormData({ name: "", email: "", message: "" });
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Error",
-        description: error.message || "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
@@ -81,7 +59,32 @@ export default function Home() {
       return;
     }
 
-    contactMutation.mutate(formData);
+    try {
+      const response = await fetch("https://formspree.io/f/xyzjaldp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for your message! We'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -402,7 +405,7 @@ export default function Home() {
           <div className="mt-16 bg-gradient-to-r from-slate-50 to-blue-50 rounded-3xl p-8 lg:p-12">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent mb-2">100+</div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent mb-2">8+</div>
                 <p className="text-gray-600 font-medium">Projects Delivered</p>
               </div>
               <div>
@@ -447,7 +450,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-semibold text-white">Call Us</p>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+1 (659) 253-8707</p>
                   </div>
                 </div>
                 
@@ -512,11 +515,10 @@ export default function Home() {
                 
                 <Button
                   type="submit"
-                  disabled={contactMutation.isPending}
-                  className="w-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
-                  {!contactMutation.isPending && <ArrowRight className="ml-2 h-4 w-4" />}
+                  Send Message
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 
                 <p className="text-sm text-gray-500 text-center">
@@ -541,7 +543,7 @@ export default function Home() {
             
             <div className="border-t border-gray-700 pt-8">
               <p className="text-gray-500">
-                © 2024 Vionex.tech. All rights reserved. Built with AI-powered innovation.
+                © 2025 Vionex.tech. All rights reserved. Built with AI-powered innovation.
               </p>
             </div>
           </div>
